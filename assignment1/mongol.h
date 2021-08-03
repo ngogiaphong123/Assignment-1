@@ -350,17 +350,6 @@ char bienDoiKyTu(char a,int n)
     }
     return a;
 }
-int countSubString(const string &str , const string &substr)
-{
-    string temp=str;
-    int count = 0;
-    while(temp.find(substr) != string::npos)
-    {
-        count++;
-        temp=temp.substr(temp.find(substr),substr.length());
-    }
-    return count;
-}
 string stringResult(int n)
 {
     string s=" V(";
